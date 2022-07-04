@@ -1,27 +1,27 @@
 [
     {
-        "model": "demanda.uf",
+        "model": "endereco.uf",
         "pk": 1,
         "fields": {
             "uf": "RJ"
         }
     },
     {
-        "model": "demanda.uf",
+        "model": "endereco.uf",
         "pk": 2,
         "fields": {
             "uf": "SP"
         }
     },
     {
-        "model": "demanda.uf",
+        "model": "endereco.uf",
         "pk": 3,
         "fields": {
             "uf": "MG"
         }
     },
     {
-        "model": "demanda.cidade",
+        "model": "endereco.cidade",
         "pk": 1,
         "fields": {
             "uf": 1,
@@ -29,7 +29,7 @@
         }
     },
     {
-        "model": "demanda.cidade",
+        "model": "endereco.cidade",
         "pk": 2,
         "fields": {
             "uf": 2,
@@ -37,7 +37,7 @@
         }
     },
     {
-        "model": "demanda.cidade",
+        "model": "endereco.cidade",
         "pk": 3,
         "fields": {
             "uf": 3,

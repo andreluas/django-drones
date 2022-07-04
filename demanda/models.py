@@ -1,19 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.safestring import mark_safe
-
-class Uf(models.Model):
-    uf = models.CharField(max_length=2, blank=False, null=False)
-
-    def __str__(self):
-        return self.uf
-
-class Cidade(models.Model):
-    cidade = models.CharField(max_length=255, blank=False, null=False)
-    uf = models.ForeignKey(Uf, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.cidade
+from endereco.models import Uf, Cidade
 
 class Demanda(models.Model):
     STATUS = (
@@ -37,4 +25,4 @@ class Demanda(models.Model):
     status_finalizacao.allow_tags = True
 
     def __str__(self):
-        return '%s: %s: %s: %s' % (self.descricao, self.logradouro, self.info_contato, self.status)
+        return '%s: %s: %s: %s' % (self.descricao, self.uf, self.cidade, self.logradouro, self.info_contato, self.status)

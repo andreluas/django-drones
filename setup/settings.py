@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'demanda',
+    'endereco',
 ]
 
 MIDDLEWARE = [

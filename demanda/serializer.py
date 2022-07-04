@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from demanda.models import Demanda, Uf, Cidade
+from demanda.models import Demanda
 from demanda.validators import contato_valido
 from django.contrib.auth.models import User
     
@@ -18,14 +18,3 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'username', 'demandas']
-
-class UfSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Uf
-        fields = '__all__'
-
-class CidadeSerializer(serializers.ModelSerializer):
-    uf = serializers.ReadOnlyField(source='uf.uf')
-    class Meta:
-        model = Cidade
-        fields = '__all__'
