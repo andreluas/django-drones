@@ -1,0 +1,8 @@
+version: '1.0'
+services:
+  project-django:
+    image: demanda-project
+    container_name: demanda-project
+    command: python manage.py runserver 0:8000
+    ports:
+      - 8000:8000

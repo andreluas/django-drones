@@ -1,0 +1,47 @@
+[
+    {
+        "model": "demanda.uf",
+        "pk": 1,
+        "fields": {
+            "uf": "RJ"
+        }
+    },
+    {
+        "model": "demanda.uf",
+        "pk": 2,
+        "fields": {
+            "uf": "SP"
+        }
+    },
+    {
+        "model": "demanda.uf",
+        "pk": 3,
+        "fields": {
+            "uf": "MG"
+        }
+    },
+    {
+        "model": "demanda.cidade",
+        "pk": 1,
+        "fields": {
+            "uf": 1,
+            "cidade": "Rio de Janeiro"
+        }
+    },
+    {
+        "model": "demanda.cidade",
+        "pk": 2,
+        "fields": {
+            "uf": 2,
+            "cidade": "Sao Paulo"
+        }
+    },
+    {
+        "model": "demanda.cidade",
+        "pk": 3,
+        "fields": {
+            "uf": 3,
+            "cidade": "Minas Gerais"
+        }
+    }
+]

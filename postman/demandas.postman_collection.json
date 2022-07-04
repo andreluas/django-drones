@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "d217117f-aa76-4300-b6fc-d4ad50d2c3c0",
+		"name": "Demandas - Desafio Finxi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16697346"
+	},
+	"item": [
+		{
+			"name": "USER-B",
+			"item": [
+				{
+					"name": "post - userb",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "userb",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "#abc123#",
+									"type": "string"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": \"userb\",\n    \"descricao\": \"Óleo de freio C2\",\n    \"logradouro\": \"Rua Pinheiros, 40\",\n    \"info_contato\": \"21 99999-9999\",\n    \"status\": \"A\",\n    \"uf\": 3,\n    \"cidade\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/demanda/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"demanda",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all - userb",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "userb",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "#abc123#",
+									"type": "string"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/demanda/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"demanda",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put - userb",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "userb",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "#abc123#",
+									"type": "string"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": \"userb\",\n    \"descricao\": \"Óleo de freio C2\",\n    \"logradouro\": \"Rua Pinheiros, 40\",\n    \"info_contato\": \"21 99999-9999\",\n    \"status\": \"F\",\n    \"uf\": 3,\n    \"cidade\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/demanda/5/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"demanda",
+								"5",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "del - userb",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "#abc123#",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "userb",
+									"type": "string"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/demanda/3/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"demanda",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ADMIN",
+			"item": [
+				{
+					"name": "get all - admin",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/demanda/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"demanda",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER-A",
+			"item": [
+				{
+					"name": "post - usera",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usera",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "#abc123#",
+									"type": "string"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": \"usera\",\n    \"descricao\": \"Disco de Freio B3\",\n    \"logradouro\": \"Rua Pinheiros, 40\",\n    \"info_contato\": \"21 99999-9999\",\n    \"status\": \"A\",\n    \"uf\": 1,\n    \"cidade\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/demanda/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"demanda",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all - usera",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usera",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "#abc123#",
+									"type": "string"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/demanda/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"demanda",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put - usera",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usera",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "#abc123#",
+									"type": "string"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"user\": \"usera\",\n        \"descricao\": \"Parachoque B045L\",\n        \"logradouro\": \"Rua Margarida, 20\",\n        \"info_contato\": \"21 99999-9999\",\n        \"status\": \"F\",\n        \"uf\": 1,\n        \"cidade\": 1\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/demanda/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"demanda",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "del - usera",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usera",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "#abc123#",
+									"type": "string"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/demanda/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"demanda",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
